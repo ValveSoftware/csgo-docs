@@ -513,95 +513,91 @@ All server convars are to be set to competitive defaults (cfg/gamemode_competiti
 
 - The following convars are to be set as such:
 ```
-tv_enable                                              1
-tv_enable1                                             1
-tv_dispatchmode                                        0
-sv_maxusrcmdprocessticks                               3    
-sv_max_dropped_packets_to_process                      3
-                   
-mp_freezetime                                          20
-tv_broadcast                                           1
-tv_allow_autorecording_index                           0
-                   
-sv_steamauth_enforce                                   1
-mp_autokick                                            0
-sv_matchend_drops_enabled                              0
-sv_damage_print_enable                                 0
-                   
-sv_reliableavatardata                                  2
-sv_invites_only_mainmenu                               1
-                   
-mp_spectators_max                                      10
-sv_matchpause_auto_5v5                                 1
-sv_clockcorrection_msecs                               0
-mp_overtime_enable                                     1
-mp_warmup_pausetimer                                   1
-mp_warmuptime                                          60
-mp_halftime_pausematch                                 1
-mp_competitive_endofmatch_extra_time                   155
-               
-mp_warmuptime_all_players_connected                    0
-               
-sv_spec_hear                                           4
-tv_relayradio                                          0
-sv_vote_allow_spectators                               1
-sv_vote_issue_loadbackup_spec_only                     1
-sv_vote_issue_loadbackup_spec_authoritative            1
-sv_vote_issue_pause_match_spec_only                    1
-sv_vote_creation_timer                                 25
-sv_vote_failure_timer                                  25
-sv_vote_command_delay                                  0
-           
-sv_occlude_players                                     0
-sv_force_transmit_players                              1
-sv_force_transmit_ents                                 1
-           
-mp_team_timeout_time                                   30
-mp_team_timeout_max                                    4
-                   
-sv_holiday_mode                                        0
-           
 cash_team_bonus_shorthanded                            0
 game_mode                                              1
 game_type                                              0
+
+mp_autokick                                            0
+mp_competitive_endofmatch_extra_time                   155
+mp_freezetime                                          20
+mp_halftime_pausematch                                 1
+mp_overtime_enable                                     1
+mp_spectators_max                                      10
+mp_team_timeout_max                                    4
+mp_team_timeout_time                                   30
+mp_warmup_pausetimer                                   1
+mp_warmuptime                                          60
+mp_warmuptime_all_players_connected                    0
+
 log                                                    on
 mp_logdetail                                           3
 mp_logdetail_items                                     1
 mp_logmoney                                            2
-sv_gameinstructor_disable                              1
-sv_invites_only_mainmenu                               1
-           
-tv_allow_camera_man_steamid                            <STEAM_ID_OF_OBSERVER>
 
+sv_damage_print_enable                                 0
+sv_gameinstructor_disable                              1
+sv_holiday_mode                                        0
+sv_invites_only_mainmenu                               1
+sv_invites_only_mainmenu                               1
+sv_matchend_drops_enabled                              0
+sv_matchpause_auto_5v5                                 1
+sv_reliableavatardata                                  2
+sv_spec_hear                                           4
+
+sv_vote_allow_spectators                               true
+sv_vote_command_delay                                  0
+sv_vote_creation_timer                                 25
+sv_vote_failure_timer                                  25
+sv_vote_issue_loadbackup_spec_authoritative            true
+sv_vote_issue_loadbackup_spec_only                     true
+
+tv_allow_autorecording_index                           0
+tv_allow_camera_man_steamid                            <STEAM_ID_OF_OBSERVER>
+tv_broadcast                                           1
+tv_dispatchmode                                        0
+tv_enable                                              1
+tv_enable1                                             1
+tv_relayradio                                          0
 ```
 
 - The following convars can have any value:
 ```
-mp_disconnect_kills_players
-mp_do_warmup_period
-mp_halftime_pausetimer
-mp_overtime_halftime_pausetimer
-mp_win_panel_display_time
-occlusion_test_async
+bot_quota
+hostname
+hostport
+ip
+rcon_password
 spec_replay_enable
+
+mp_backup_round_file
+mp_disconnect_kills_players
+mp_endmatch_votenextmap
+mp_halftime_pausetimer
+mp_limitteams
+mp_logmoney
+mp_overtime_halftime_pausetimer
+mp_teamname_1
+mp_teamname_2
+mp_teamscore_max
+mp_win_panel_display_time
+
 sv_allow_votes
-sv_allow_wait_command
-sv_dc_friends_reqd
-sv_forcepreload
+sv_allowdownload
+sv_competitive_official_5v5
 sv_hibernate_postgame_delay
 sv_hibernate_when_empty
 sv_kick_ban_duration
 sv_kick_players_with_cooldown
 sv_lan
 sv_load_forced_client_names_file
+sv_log_onefile
 sv_max_queries_sec
-sv_maxcmdrate
 sv_maxrate
 sv_maxuptimelimit
 sv_memlimit
-sv_mincmdrate
 sv_minrate
 sv_pausable
+sv_pure_allow_loose_file_loads
 sv_pure_kick_clients
 sv_pure_trace
 sv_server_graphic1
@@ -609,8 +605,12 @@ sv_server_graphic2
 sv_steamgroup
 sv_steamgroup_exclusive
 sv_voiceenable
+sv_vote_issue_kick_allowed
+sv_vote_issue_loadbackup_allowed
 sv_vote_quorum_ratio
 sv_vote_timer_duration
+sv_workshop_allow_other_maps
+
 tv_advertise_watchable
 tv_allow_static_shots
 tv_autorecord
@@ -627,7 +627,10 @@ tv_maxclients
 tv_maxrate
 tv_name
 tv_overridemaster
-tv_relay_whitelist_cidr
+tv_password
+tv_port
+tv_port1
+tv_relaypassword
 tv_timeout
 tv_title
 tv_transmitall

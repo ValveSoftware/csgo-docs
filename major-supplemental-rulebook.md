@@ -286,16 +286,17 @@ All Invited and Qualified Teams are first sorted by [Regional Standing](#Regiona
 
 E.g., With two 16-team RMRs, the EUR regional teams would be assigned as follows: 
 
-|     EUR 1 |     EUR 2 |
-|----------:|----------:|
-| 1  and 32 | 2  and 31 |
-| 3  and 30 | 4  and 29 |
-| 5  and 28 | 6  and 27 |
-| 7  and 26 | 8  and 25 |
-| 10 and 24 | 9  and 23 |
-| 12 and 22 | 11 and 21 |
-| 14 and 20 | 13 and 19 |
-| 16 and 18 | 15 and 17 |
+| EUR 1                | EUR 2                |
+| :------------------- | :------------------- |
+| 1  and 32            | 2  and 31            |
+| 3  and 30            | 4  and 29            |
+| 5  and 28            | 6  and 27            |
+| 7  and 26            | 8  and 25            |
+| 10 and 23            | 9  and 24            |
+| 12 and 21            | 11 and 22            |
+| 14 and 19            | 13 and 20            |
+| 16 and 17            | 15 and 18            |
+| Avg. Strength = 16.5 | Avg. Strength = 16.5 |
 
 ##### Swiss Bracket
 - Teams play against opponents of identical W-L record.

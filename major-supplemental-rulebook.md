@@ -78,7 +78,7 @@ If all players are from another region, then they can choose any region.
 #### Regional Representation
 The number of teams invited from each region depends on the performance of that region in the preceding Major. Opening and Elimination Stage invitations are allocated according to the number of teams from the region that earned their respective position in the Major:
 - One Opening stage invitation is assigned to the region for every team of that region that reached the Elimination stage of the previous Major.
-- One Elimination stage invitation is assigned to the region for every team of that region that reached the Playoff stage of the previous Major.
+- One Elimination stage invitation is assigned to the region for every team of that region that reached the Playoffs Stage of the previous Major.
 
 Additionally, 8 Opening stage invitations are distributed to regions.
 
@@ -402,7 +402,7 @@ Coming into the event, all 24 teams are sorted based on their current [Regional 
 	* The top 8 teams will use their [pre-event seed](#Pre-event-Seeding).
 	* The bottom 8 teams will use their final seed from the Opening stage (see [Mid-stage Seed Calculation](#Mid-Stage-Seed-Calculation)).
 
-* Playoff Stage:
+* Playoffs Stage:
 	* All teams will use their final seed from the Elimination stage (see [Mid-stage Seed Calculation](#Mid-stage-Seed-Calculation)).
 
 ##### Mid-stage Seed Calculation

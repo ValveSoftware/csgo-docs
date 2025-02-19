@@ -569,28 +569,28 @@ Servers must be configured to submit logs in order for the match results to pres
 1. Provide Valve the Steam ID of the account ("Admin") that will be setting and submitting the match logs in order to enable the Control Room.
 1. Provide Valve a Web API key for the Admin account. If you don't have one, create one [here.](https://steamcommunity.com/dev)
 
-<a id="GOTV"></a>
-#### GOTV [Major]
-##### Pre-event GOTV Testing
+<a id="CSTV"></a>
+#### CSTV [Major]
+##### Pre-event CSTV Testing
 Below is a step-by-step test to confirm that GOTV and caster camera/audio are working correctly.
 
-1. Get a vanilla CS game server install using SteamCMD >> app_update 740 validate.
+1. Get a vanilla CS game server install using SteamCMD >> app_update 730 validate.
 
 1. Create your game server login token for CS AppID 730 at: https://steamcommunity.com/dev/managegameservers
 
 1. Launch the game server using bash on Linux 
-`./srcds_run -debug -game csgo -console +game_type 0 +game_mode 1 +mapgroup mg_dust247 +map de_dust2 -tickrate 128 +sv_setsteamaccount TOKEN_FROM_PREV_STEP +tv_enable 1 -ip 10.10.10.12`
+`./cs2 -dedicated -debug -console +game_type 0 +game_mode 1 +mapgroup mg_dust247 +map de_dust2 +sv_setsteamaccount TOKEN_FROM_PREV_STEP +tv_enable 1 -ip 10.10.10.12`
 
-1. On the game server enable GOTV camera man SteamID (and optionally set a shorter TV delay for testing):
+1. On the game server enable CSTV camera man SteamID (and optionally set a shorter TV delay for testing):
     ``` 
     sv_spec_hear 4
     tv_delay 7
     tv_allow_camera_man_steamid STEAM_ID_OF_OBSERVER
-    (optionally start GOTV+ broadcast upload)
+    (optionally start CSTV broadcast upload)
     ```
 1. Connect players to the game server:
     * one player connect CT (connect XX.XX.XX.XX:27015)
-    * tester connect to the GOTV port (connect XX.XX.XX.XX:27020) or start watching playcast 
+    * tester connect to the CSTV port (connect XX.XX.XX.XX:27020) or start watching playcast 
 
 1. Run the game on observer computer with -interactivecaster launch option
 1. Connect observer's game to the server as spectator (connect XX.XX.XX.XX:27015, then press 'M' to switch to spectator, will appear on the scoreboard as 'SPEC')
